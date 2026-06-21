@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
-@section('title', 'Application Received — Mills IP')
-@section('meta_description', 'Your trademark application has been received by Mills IP.')
+@section('title', 'Application Received — Mills IP NZ')
+@section('meta_description', 'Your trademark application has been received by Mills IP NZ.')
 
 @section('content')
 
@@ -17,7 +17,7 @@
                         </svg>
                     </div>
                     <h1>Application Submitted</h1>
-                    <p>Thank you{{ $contactName ? ', ' . $contactName : '' }}. Your trademark application has been received by the Mills IP team.</p>
+                    <p>Thank you{{ $contactName ? ', ' . $contactName : '' }}. Your trademark application has been received by the Mills IP NZ team.</p>
                 </div>
 
                 @if($trademark)
@@ -39,14 +39,14 @@
                             </div>
                             <div class="tl-content">
                                 <h4>Application received</h4>
-                                <p>Your application has been saved and assigned to the Mills IP legal team for review.</p>
+                                <p>Your application has been saved and assigned to the Mills IP NZ legal team for review.</p>
                             </div>
                         </div>
                         <div class="tl-item">
                             <div class="tl-dot next">2</div>
                             <div class="tl-content">
                                 <h4>Attorney review — within 1 business day</h4>
-                                <p>A Mills IP trademark attorney will review your application, check the register for conflicts, and prepare your fixed fee quote.</p>
+                                <p>A Mills IP NZ trademark attorney will review your application, check the register for conflicts, and prepare your fixed fee quote.</p>
                             </div>
                         </div>
                         <div class="tl-item">
@@ -59,8 +59,8 @@
                         <div class="tl-item">
                             <div class="tl-dot next">4</div>
                             <div class="tl-content">
-                                <h4>Application filed with IP Australia</h4>
-                                <p>Once you approve, Mills IP handles the complete filing with the official Australian government trademark register on your behalf.</p>
+                                <h4>Application filed with IPONZ</h4>
+                                <p>Once you approve, Mills IP NZ handles the complete filing with the official New Zealand trademark register on your behalf.</p>
                             </div>
                         </div>
                     </div>
@@ -114,7 +114,7 @@
                         </div>
                         <div class="tbadge-text">
                             <h4>Response within 1 business day</h4>
-                            <p>Expect your fixed fee quote from the Mills IP legal team.</p>
+                            <p>Expect your fixed fee quote from the Mills IP NZ legal team.</p>
                         </div>
                     </div>
                     <div class="tbadge">

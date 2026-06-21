@@ -13,7 +13,7 @@ class AdminUserSeeder extends Seeder
         AdminUser::firstOrCreate(
             ['email' => 'admin@example.com'],
             [
-                'name'     => 'Mills IP Admin',
+                'name'     => 'Mills IP NZ Admin',
                 'password' => Hash::make('TM@Admin2024!'),
             ]
         );

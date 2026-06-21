@@ -18,7 +18,7 @@ class ApplicantConfirmation extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Your Trademark Application Has Been Received — Mills IP',
+            subject: 'Your Trademark Application Has Been Received — Mills IP NZ',
         );
     }
 

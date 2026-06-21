@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Search the official IPONZ trademark register in real time. Free, instant, and directly from the government database. Mills IP NZ — New Zealand Trademark Attorneys.">
+    <title>New Zealand Trademark Search | Trademarks and Brand Protection</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://127.0.0.1:8002/css/app.css">
+    </head>
+<body>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav-inner">
+        <a href="http://127.0.0.1:8002" class="nav-logo">
+            <img src="http://127.0.0.1:8002/images/logo.png" alt="Mills IP NZ" class="nav-logo-img">
+        </a>
+        <div class="nav-links" id="nav-links">
+            <a href="http://127.0.0.1:8002" class="nav-link">Search Trademarks</a>
+            <a href="http://127.0.0.1:8002#how-it-works" class="nav-link">How It Works</a>
+                            <a href="http://127.0.0.1:8002/apply/step/1" class="nav-cta" id="nav-start-btn">
+                    Start Application
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+                    </div>
+        <button class="nav-mobile-btn" id="nav-toggle" aria-label="Open navigation menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile">
+        <a href="http://127.0.0.1:8002">Search Trademarks</a>
+        <a href="http://127.0.0.1:8002#how-it-works">How It Works</a>
+        <a href="http://127.0.0.1:8002/apply/step/1">Start Application</a>
+    </div>
+</nav>
+
+<main role="main">
+    
+<section class="hero" id="search">
+    <div class="container hero-body">
+        <div class="hero-content">
+
+            <div class="hero-eyebrow">
+                <span class="live-dot"></span>
+                Live IPONZ Register
+            </div>
+
+            <h1>Protect Your Brand<br>in <span class="accent">New Zealand</span></h1>
+
+            <p class="hero-desc">
+                Search the official IPONZ trademark register in real time. Free and instant, pulled directly from the government database. Then apply with expert attorney support.
+            </p>
+
+            <form action="http://127.0.0.1:8002/search" method="GET" role="search" id="hero-search-form">
+                <div class="hs-wrap">
+                    <span class="hs-icon" aria-hidden="true">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path>
+                        </svg>
+                    </span>
+                    <input
+                        type="text" name="q" class="hs-input"
+                        placeholder="Enter a brand name, word, or phrase..."
+                        autocomplete="off" spellcheck="false"
+                        aria-label="Trademark search query"
+                        maxlength="100" value="" required
+                    >
+                    <button type="submit" class="hs-btn">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                        Search Trademarks
+                    </button>
+                </div>
+            </form>
+
+            <div class="hero-trust">
+                <span class="hti">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Free to search
+                </span>
+                <span class="hti">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    Official IPONZ data
+                </span>
+                <span class="hti">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    No account required
+                </span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<div class="stats-strip">
+    <div class="container">
+        <div class="hero-stats">
+            <div class="hst-item">
+                <strong>2M+</strong>
+                <span>Records on IPONZ</span>
+            </div>
+            <div class="hst-item">
+                <strong>Free</strong>
+                <span>Always free to search</span>
+            </div>
+            <div class="hst-item">
+                <strong>1 Day</strong>
+                <span>Attorney quote turnaround</span>
+            </div>
+            <div class="hst-item">
+                <strong>100%</strong>
+                <span>Official government data</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="hiw-section" id="how-it-works">
+    <div class="container">
+
+        <div class="hiw-head">
+            <div>
+                <span class="section-tag">How It Works</span>
+                <h2>From search to registration in three clear steps</h2>
+            </div>
+            <p>No jargon, no confusion. Mills IP NZ guides you through the trademark process clearly and efficiently, from your first search through to final registration.</p>
+        </div>
+
+        <div class="hiw-process">
+
+            <div class="hiw-step">
+                <div class="hiw-step-num">01</div>
+                <div class="hiw-step-body">
+                    <div class="hiw-step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    </div>
+                    <h3>Search the Register</h3>
+                    <p>Enter your proposed brand name and instantly see matching records pulled directly from the IPONZ live register. No login, no delays, no cost.</p>
+                </div>
+            </div>
+
+            <div class="hiw-step">
+                <div class="hiw-step-num">02</div>
+                <div class="hiw-step-body">
+                    <div class="hiw-step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Review the Results</h3>
+                    <p>Results include the trademark owner, class, status, and key dates. Assess any conflicts and determine your brand's availability before committing to a registration application.</p>
+                </div>
+            </div>
+
+            <div class="hiw-step">
+                <div class="hiw-step-num">03</div>
+                <div class="hiw-step-body">
+                    <div class="hiw-step-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    </div>
+                    <h3>Submit Your Application</h3>
+                    <p>Complete the five-step application form in minutes. A Mills IP NZ attorney reviews your application and provides a fixed fee quote within one business day.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="hiw-foot">
+            <a href="http://127.0.0.1:8002?apply=1#search" class="btn-solid" id="hiw-start-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                Search to Get Started
+            </a>
+            <span class="hiw-note">Always search before you apply</span>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-section">
+    <div class="container">
+        <div class="why-grid">
+
+            <div class="why-left">
+                <span class="section-tag">Why Mills IP NZ</span>
+                <h2>Expert trademark protection for New Zealand businesses</h2>
+                <p>Real-time IPONZ access combined with dedicated IP attorney oversight. Your trademark is handled accurately and efficiently, from first search to final registration.</p>
+                <div class="why-actions">
+                    <a href="http://127.0.0.1:8002/apply/step/1" class="btn-solid-white">Start an Application</a>
+                    <span class="why-note">No payment required to apply</span>
+                </div>
+            </div>
+
+            <div class="why-features">
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>Official government data</h4>
+                        <p>Search results come directly from IPONZ, the same register used by IP practitioners across New Zealand.</p>
+                    </div>
+                </div>
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>Fixed fee, no surprises</h4>
+                        <p>A clear, all-inclusive fixed fee quote before any commitment. No hidden costs, no hourly billing.</p>
+                    </div>
+                </div>
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>Response in 1 business day</h4>
+                        <p>Our attorneys review every application personally and respond with a quote within one business day.</p>
+                    </div>
+                </div>
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>NZ IP specialists</h4>
+                        <p>Dedicated New Zealand intellectual property experts, not generalists. Your trademark receives focused, specialist attention.</p>
+                    </div>
+                </div>
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>Full-service filing</h4>
+                        <p>From application to IPONZ lodgement, Mills IP NZ handles the complete registration process on your behalf.</p>
+                    </div>
+                </div>
+
+                <div class="wf-item">
+                    <div class="wf-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </div>
+                    <div class="wf-body">
+                        <h4>Plain-English advice</h4>
+                        <p>No legal jargon. We explain your options clearly so you can make informed decisions about protecting your brand.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-band">
+    <div class="container">
+        <div class="cta-inner">
+            <div>
+                <h2>Ready to protect<br>your brand?</h2>
+                <p>Search the IPONZ register for free, then start your application in minutes. A Mills IP NZ attorney takes care of everything from there.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="#search" class="cta-btn-primary" id="cta-search-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                    Search the Register
+                </a>
+                <a href="http://127.0.0.1:8002/apply/step/1" class="cta-btn-outline" id="cta-apply-btn">
+                    Start Application
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer" role="contentinfo">
+    <div class="footer-main">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="http://127.0.0.1:8002" class="footer-logo">
+                    <img src="http://127.0.0.1:8002/images/logo.png" alt="Mills IP NZ" class="footer-logo-img">
+                </a>
+                <p class="footer-tagline">New Zealand trademark attorneys. Search the official IPONZ register and apply for trademark registration with expert attorney support.</p>
+
+                <div class="footer-badges">
+                    <span>IPONZ Registered</span>
+                    <span>NZ Attorneys</span>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Platform</h4>
+                <ul>
+                    <li><a href="http://127.0.0.1:8002">Trademark Search</a></li>
+                    <li><a href="http://127.0.0.1:8002/apply/step/1">Start an Application</a></li>
+                    <li><a href="http://127.0.0.1:8002#how-it-works">How It Works</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="http://127.0.0.1:8002/apply/step/1">Trademark Registration</a></li>
+                    <li><a href="http://127.0.0.1:8002/apply/step/1">Fixed Fee Quotes</a></li>
+                    <li><a href="http://127.0.0.1:8002/apply/step/1">Attorney Review</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="http://127.0.0.1:8002/admin/login">Team Login</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bar">
+        <div class="container footer-bar-inner">
+            <p>&copy; 2026 Mills IP NZ. All rights reserved.</p>
+            <p>Legal services provided by Mills IP NZ Ltd. New Zealand trademark attorneys. Liability limited by a scheme approved under Professional Standards Legislation.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    // Mobile nav toggle
+    var toggleBtn = document.getElementById('nav-toggle');
+    var mobileMenu = document.getElementById('nav-mobile');
+    if (toggleBtn && mobileMenu) {
+        toggleBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('open');
+        });
+    }
+
+    // Pulse the search bar
+    function pulseSearchBar() {
+        var wrap = document.querySelector('.hs-wrap');
+        var input = document.querySelector('.hs-input');
+        if (!wrap) return;
+        wrap.classList.remove('search-pulse');
+        void wrap.offsetWidth;
+        wrap.classList.add('search-pulse');
+        if (input) input.focus();
+        setTimeout(function() { wrap.classList.remove('search-pulse'); }, 2500);
+    }
+
+    // Nav "Start Application" → scroll to hero search + pulse
+    var startBtn = document.getElementById('nav-start-btn');
+    if (startBtn) {
+        startBtn.addEventListener('click', function(e) {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                e.preventDefault();
+                form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(pulseSearchBar, 700);
+            }
+        });
+    }
+
+    // CTA "Search the Register" → scroll to hero search + pulse
+    var ctaBtn = document.getElementById('cta-search-btn');
+    if (ctaBtn) {
+        ctaBtn.addEventListener('click', function(e) {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                e.preventDefault();
+                form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(pulseSearchBar, 700);
+            }
+        });
+    }
+
+    // If navigated from another page via ?apply=1
+    if (window.location.search.indexOf('apply=1') !== -1) {
+        window.addEventListener('load', function() {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                setTimeout(function() {
+                    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    setTimeout(pulseSearchBar, 700);
+                }, 200);
+            }
+        });
+    }
+})();
+</script>
+</body>
+</html>

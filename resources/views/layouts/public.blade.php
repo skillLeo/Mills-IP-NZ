@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="@yield('meta_description', 'Search the official IP Australia trademark database in real time. TM.com.au — Trademarks and Brand Protection.')">
-    <title>@yield('title', 'TM.com.au') | Trademarks and Brand Protection</title>
+    <meta name="description" content="@yield('meta_description', 'Search the official IPONZ trademark register in real time. Mills IP NZ — New Zealand Trademark Attorneys.')">
+    <title>@yield('title', 'Mills IP NZ') | Trademarks and Brand Protection</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @stack('styles')
 </head>
@@ -17,15 +17,15 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
     <div class="container nav-inner">
         <a href="{{ route('search') }}" class="nav-logo">
-            <img src="{{ asset('images/logo.png') }}" alt="TM.com.au" class="nav-logo-img">
+            <img src="{{ asset('images/logo.png') }}" alt="Mills IP NZ" class="nav-logo-img">
         </a>
         <div class="nav-links" id="nav-links">
             <a href="{{ route('search') }}" class="nav-link">Search Trademarks</a>
             <a href="{{ route('search') }}#how-it-works" class="nav-link">How It Works</a>
             @unless(request()->routeIs('apply.*'))
-                <a href="{{ route('search') }}?apply=1#search" class="nav-cta" id="nav-start-btn">
+                <a href="{{ route('apply.step1') }}" class="nav-cta" id="nav-start-btn">
                     Start Application
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
                 </a>
             @endunless
         </div>
@@ -53,12 +53,13 @@
         <div class="container footer-grid">
             <div class="footer-brand">
                 <a href="{{ route('search') }}" class="footer-logo">
-                    <img src="{{ asset('images/logo.png') }}" alt="TM.com.au" class="footer-logo-img">
+                    <img src="{{ asset('images/logo.png') }}" alt="Mills IP NZ" class="footer-logo-img">
                 </a>
-                <p class="footer-tagline">Trademarks and Brand Protection. Search the official IP Australia database and apply for trademark registration with expert attorney support.</p>
+                <p class="footer-tagline">New Zealand trademark attorneys. Search the official IPONZ register and apply for trademark registration with expert attorney support.</p>
+
                 <div class="footer-badges">
-                    <span>IP Australia Registered</span>
-                    <span>Australian Attorneys</span>
+                    <span>IPONZ Registered</span>
+                    <span>NZ Attorneys</span>
                 </div>
             </div>
             <div class="footer-col">
@@ -89,8 +90,8 @@
     </div>
     <div class="footer-bar">
         <div class="container footer-bar-inner">
-            <p>&copy; {{ date('Y') }} TM.com.au. All rights reserved.</p>
-            <p>Legal services provided by Mills IP, ABN 44 120 677 429. Liability limited by a scheme approved under Professional Standards Legislation.</p>
+            <p>&copy; {{ date('Y') }} Mills IP NZ. All rights reserved.</p>
+            <p>Legal services provided by Mills IP NZ Ltd. New Zealand trademark attorneys. Liability limited by a scheme approved under Professional Standards Legislation.</p>
         </div>
     </div>
 </footer>
@@ -106,38 +107,64 @@
         });
     }
 
-    // "Start Application" nav button — if already on search page, scroll + pulse search bar
-    var startBtn = document.getElementById('nav-start-btn');
-    if (startBtn) {
-        startBtn.addEventListener('click', function(e) {
-            var searchForm = document.getElementById('hero-search-form');
-            if (searchForm) {
-                e.preventDefault();
-                searchForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                setTimeout(function() { pulseSearchBar(); }, 700);
+    // Pulse the search bar
+    function pulseSearchBar() {
+        var row = document.querySelector('.hs-row') || document.querySelector('.hs-wrap');
+        var input = document.querySelector('.hs-input');
+        if (!row) return;
+        row.classList.remove('search-pulse');
+        void row.offsetWidth;
+        row.classList.add('search-pulse');
+        if (input) input.focus();
+        setTimeout(function() { row.classList.remove('search-pulse'); }, 2500);
+    }
+
+    // "Start an application" hero link → scroll to search + pulse (search first)
+    var heroApplyLink = document.getElementById('hero-apply-link');
+    if (heroApplyLink) {
+        heroApplyLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(pulseSearchBar, 600);
             }
         });
     }
 
-    // Pulse search bar — triggered on page load if ?apply=1 is in URL
-    function pulseSearchBar() {
-        var wrap = document.querySelector('.hs-wrap');
-        var input = document.querySelector('.hs-input');
-        if (!wrap) return;
-        wrap.classList.remove('search-pulse');
-        void wrap.offsetWidth; // force reflow to restart animation
-        wrap.classList.add('search-pulse');
-        if (input) input.focus();
-        setTimeout(function() { wrap.classList.remove('search-pulse'); }, 2800);
+    // Nav "Start Application" → scroll to hero search + pulse
+    var startBtn = document.getElementById('nav-start-btn');
+    if (startBtn) {
+        startBtn.addEventListener('click', function(e) {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                e.preventDefault();
+                form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(pulseSearchBar, 700);
+            }
+        });
     }
 
-    // If navigated from another page via ?apply=1, scroll + pulse on load
+    // CTA "Search the Register" → scroll to hero search + pulse
+    var ctaBtn = document.getElementById('cta-search-btn');
+    if (ctaBtn) {
+        ctaBtn.addEventListener('click', function(e) {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
+                e.preventDefault();
+                form.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                setTimeout(pulseSearchBar, 700);
+            }
+        });
+    }
+
+    // If navigated from another page via ?apply=1
     if (window.location.search.indexOf('apply=1') !== -1) {
         window.addEventListener('load', function() {
-            var searchForm = document.getElementById('hero-search-form');
-            if (searchForm) {
+            var form = document.getElementById('hero-search-form');
+            if (form) {
                 setTimeout(function() {
-                    searchForm.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    form.scrollIntoView({ behavior: 'smooth', block: 'center' });
                     setTimeout(pulseSearchBar, 700);
                 }, 200);
             }

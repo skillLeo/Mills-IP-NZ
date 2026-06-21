@@ -35,15 +35,13 @@ return [
         ],
     ],
 
-    'ip_australia' => [
-        'client_id'     => env('IP_AUSTRALIA_CLIENT_ID'),
-        'client_secret' => env('IP_AUSTRALIA_CLIENT_SECRET'),
-        'token_url'     => env('IP_AUSTRALIA_TOKEN_URL'),
-        'base_url'      => env('IP_AUSTRALIA_BASE_URL'),
+    'iponz' => [
+        'subscription_key' => env('IPONZ_SUBSCRIPTION_KEY'),
+        'base_url'         => env('IPONZ_BASE_URL'),
     ],
 
-    'mills_ip' => [
-        'notification_email' => env('MILLS_IP_NOTIFICATION_EMAIL', 'admin@millsip.com.au'),
+    'mills_ip_nz' => [
+        'notification_email' => env('MILLS_IP_NZ_NOTIFICATION_EMAIL', 'admin@millsipnz.co.nz'),
     ],
 
 ];

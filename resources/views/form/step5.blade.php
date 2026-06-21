@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', 'Trademark Application — Step 5 of 5')
-@section('meta_description', 'Final step — add any notes and submit your trademark application to Mills IP.')
+@section('meta_description', 'Final step — add any notes and submit your trademark application to Mills IP NZ.')
 
 @section('content')
 
@@ -19,7 +19,7 @@
                 <div class="fcard-head">
                     <div class="step-pill">Step 5 of 5 — Final Step</div>
                     <h2>Additional Notes</h2>
-                    <p>Anything else the Mills IP team should know? This is optional — you can submit without adding notes.</p>
+                    <p>Anything else the Mills IP NZ team should know? This is optional — you can submit without adding notes.</p>
                 </div>
 
                 <form method="POST" action="{{ route('apply.submit') }}" novalidate>
@@ -28,7 +28,7 @@
 
                         <div class="field">
                             <div class="field-row">
-                                <label for="additional_notes" class="field-label">Notes for Mills IP</label>
+                                <label for="additional_notes" class="field-label">Notes for Mills IP NZ</label>
                                 <span class="field-opt">Optional</span>
                             </div>
                             <textarea
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="submit-note">
-                            By submitting this application you agree to be contacted by Mills IP regarding your trademark enquiry. <strong>No payment is required at this stage.</strong> You will receive a fixed fee quote within one business day.
+                            By submitting this application you agree to be contacted by Mills IP NZ regarding your trademark enquiry. <strong>No payment is required at this stage.</strong> You will receive a fixed fee quote within one business day.
                         </div>
 
                     </div>
@@ -134,7 +134,7 @@
                         </div>
                         <div class="tbadge-text">
                             <h4>You're almost done</h4>
-                            <p>Once submitted, a Mills IP attorney will review your application and send a fixed fee quote within one business day.</p>
+                            <p>Once submitted, a Mills IP NZ attorney will review your application and send a fixed fee quote within one business day.</p>
                         </div>
                     </div>
                 </div>

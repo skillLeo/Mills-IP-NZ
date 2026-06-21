@@ -3,14 +3,14 @@
 namespace App\Http\Controllers\Public;
 
 use App\Http\Controllers\Controller;
-use App\Services\IPAustraliaService;
+use App\Services\IPONZService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class SearchController extends Controller
 {
-    public function __construct(private IPAustraliaService $ipAustralia) {}
+    public function __construct(private IPONZService $iponz) {}
 
     public function index(): View
     {
@@ -23,14 +23,23 @@ class SearchController extends Controller
             'q' => ['required', 'string', 'min:2', 'max:100'],
         ]);
 
-        $query   = trim($request->input('q'));
-        $data    = $this->ipAustralia->search($query);
-        $results = $data['results'] ?? [];
-        $total   = $data['total']   ?? count($results);
-        $loaded  = $data['loaded']  ?? count($results);
-        $hasMore = $data['hasMore'] ?? false;
+        set_time_limit(60); // API calls can take longer than the default 30s
 
-        return view('public.results', compact('query', 'results', 'total', 'loaded', 'hasMore'));
+        $query   = trim($request->input('q'));
+
+        try {
+            $data = $this->iponz->search($query);
+        } catch (\Exception $e) {
+            \Log::error('Search failed: ' . $e->getMessage());
+            $data = ['results' => [], 'total' => 0, 'loaded' => 0, 'hasMore' => false, 'apiError' => true];
+        }
+        $results  = $data['results']  ?? [];
+        $total    = $data['total']    ?? count($results);
+        $loaded   = $data['loaded']   ?? count($results);
+        $hasMore  = $data['hasMore']  ?? false;
+        $apiError = $data['apiError'] ?? false;
+
+        return view('public.results', compact('query', 'results', 'total', 'loaded', 'hasMore', 'apiError'));
     }
 
     public function loadMore(Request $request): JsonResponse
@@ -42,7 +51,7 @@ class SearchController extends Controller
 
         $query = trim($request->input('q'));
         $page  = (int) $request->input('page');
-        $data  = $this->ipAustralia->searchPage($query, $page);
+        $data  = $this->iponz->searchPage($query, $page);
 
         $html = '';
         foreach ($data['results'] as $tm) {

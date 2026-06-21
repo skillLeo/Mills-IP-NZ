@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Application Received — Mills IP</title>
+<title>Application Received — Mills IP NZ</title>
 </head>
 <body style="margin:0;padding:0;background:#f6f8fb;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#172033;">
 
@@ -16,8 +16,8 @@
                 {{-- Header --}}
                 <tr>
                     <td style="background:#172033;border-radius:8px 8px 0 0;padding:28px 36px;">
-                        <p style="margin:0;font-size:20px;font-weight:800;color:#ffffff;letter-spacing:0;">Mills IP</p>
-                        <p style="margin:6px 0 0;font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">Australian Trademark Attorneys</p>
+                        <p style="margin:0;font-size:20px;font-weight:800;color:#ffffff;letter-spacing:0;">Mills IP NZ</p>
+                        <p style="margin:6px 0 0;font-size:12px;color:rgba(255,255,255,0.55);font-weight:600;letter-spacing:0.08em;text-transform:uppercase;">New Zealand Trademark Attorneys</p>
                     </td>
                 </tr>
 
@@ -39,15 +39,15 @@
                         </h1>
 
                         <p style="margin:0 0 20px;font-size:16px;color:#5f6b7a;line-height:1.65;">
-                            Thank you for submitting your trademark application to Mills IP. Our attorneys will review everything you have provided and get back to you with a fixed fee quote within <strong style="color:#172033;">one business day</strong>.
+                            Thank you for submitting your trademark application to Mills IP NZ. Our attorneys will review everything you have provided and get back to you with a fixed fee quote within <strong style="color:#172033;">one business day</strong>.
                         </p>
 
                         {{-- Promise box --}}
                         <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin-bottom:28px;">
                             <tr>
-                                <td style="background:#eef4f6;border-left:3px solid #1f5eff;border-radius:0 6px 6px 0;padding:16px 20px;">
+                                <td style="background:#e8f8f5;border-left:3px solid #0a7c6e;border-radius:0 6px 6px 0;padding:16px 20px;">
                                     <p style="margin:0;font-size:14px;font-weight:700;color:#172033;">What happens next</p>
-                                    <p style="margin:6px 0 0;font-size:14px;color:#5f6b7a;line-height:1.6;">A Mills IP attorney will review your application, assess any potential conflicts in the trademark register, and prepare a clear fixed fee quote. You will hear from us within one business day.</p>
+                                    <p style="margin:6px 0 0;font-size:14px;color:#5f6b7a;line-height:1.6;">A Mills IP NZ attorney will review your application, assess any potential conflicts in the trademark register, and prepare a clear fixed fee quote. You will hear from us within one business day.</p>
                                 </td>
                             </tr>
                         </table>
@@ -61,7 +61,7 @@
                         </p>
 
                         <p style="margin:0;font-size:15px;color:#172033;font-weight:600;">
-                            The Mills IP Team
+                            The Mills IP NZ Team
                         </p>
 
                     </td>
@@ -71,8 +71,8 @@
                 <tr>
                     <td style="background:#f6f8fb;border-top:1px solid #dde5ee;border-radius:0 0 8px 8px;padding:20px 36px;">
                         <p style="margin:0;font-size:12px;color:#8a95a5;line-height:1.6;">
-                            Mills IP Pty Ltd &middot; Australian Trademark Attorneys<br>
-                            You are receiving this email because you submitted a trademark application through the Mills IP platform.
+                            Mills IP NZ Ltd &middot; New Zealand Trademark Attorneys<br>
+                            You are receiving this email because you submitted a trademark application through the Mills IP NZ platform.
                         </p>
                     </td>
                 </tr>

@@ -1,19 +1,19 @@
-# CLAUDE.md — Mills IP Trademark Search & Application Platform
+# CLAUDE.md — Mills IP NZ Trademark Search & Application Platform
 
 ## Project Overview
 
-This is a full Laravel rebuild of a trademark search and application platform for **Mills IP**, an
-Australian trademark attorney firm. The old system was raw legacy PHP with no framework, no
+This is a full Laravel rebuild of a trademark search and application platform for **Mills IP NZ**, a
+New Zealand trademark attorney firm. The old system was raw legacy PHP with no framework, no
 structure, and inadequate security. This rebuild starts from scratch.
 
 The platform has two sides:
-- **Public side** — Anyone can search the IP Australia trademark database and submit a
+- **Public side** — Anyone can search the IPONZ trademark register and submit a
   five-step trademark application form.
-- **Admin side** — The Mills IP legal team logs in privately to manage, track, and update all
+- **Admin side** — The Mills IP NZ legal team logs in privately to manage, track, and update all
   incoming applications.
 
 **Current build scope: Phase 1 only** — Foundation, database, admin auth, and live trademark
-search via the IP Australia API.
+search via the IPONZ API.
 
 ---
 
@@ -22,10 +22,10 @@ search via the IP Australia API.
 | Field         | Detail                                                    |
 |---------------|-----------------------------------------------------------|
 | Developer     | Aydin (intermediary agency developer)                     |
-| End Client    | Mills IP — Australian trademark attorney firm             |
-| Market        | Australia — businesses and individuals                    |
+| End Client    | Mills IP NZ — New Zealand trademark attorney firm         |
+| Market        | New Zealand — businesses and individuals                  |
 | Stage         | MVP — concept validation before further investment        |
-| Future        | May rebrand as TM.com.au powered by Mills IP              |
+| Future        | May rebrand as TM.co.nz powered by Mills IP NZ            |
                                       |
 
 > Quality matters significantly — Mills IP is a key client of Aydin's agency.

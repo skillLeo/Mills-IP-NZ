@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', 'Trademark Application — Step 2 of 5')
-@section('meta_description', 'Describe your business as part of your trademark application with Mills IP.')
+@section('meta_description', 'Describe your business as part of your trademark application with Mills IP NZ.')
 
 @section('content')
 
@@ -107,7 +107,7 @@
                 <div class="scard">
                     <div class="scard-head"><h3>Why we ask this</h3></div>
                     <div class="scard-body">
-                        <p style="font-size:13px;color:var(--muted);line-height:1.6;margin:0">The goods and services description determines which trademark class your application is filed under. Accurate descriptions help Mills IP prepare the strongest possible application on your behalf.</p>
+                        <p style="font-size:13px;color:var(--muted);line-height:1.6;margin:0">The goods and services description determines which trademark class your application is filed under. Accurate descriptions help Mills IP NZ prepare the strongest possible application on your behalf.</p>
                     </div>
                 </div>
 

@@ -1,7 +1,7 @@
 <aside class="admin-sidebar">
     <div class="sidebar-top">
         <a href="{{ route('admin.dashboard') }}" class="admin-logo">
-            <img src="{{ asset('images/logo.png') }}" alt="TM.com.au" class="sidebar-logo-img">
+            <img src="{{ asset('images/logo.png') }}" alt="Mills IP NZ" class="sidebar-logo-img">
         </a>
 
         <div class="sidebar-section-label">Navigation</div>

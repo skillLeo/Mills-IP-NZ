@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', 'Trademark Application — Step 4 of 5')
-@section('meta_description', 'Provide your contact details for your trademark application with Mills IP.')
+@section('meta_description', 'Provide your contact details for your trademark application with Mills IP NZ.')
 
 @section('content')
 
@@ -19,7 +19,7 @@
                 <div class="fcard-head">
                     <div class="step-pill">Step 4 of 5</div>
                     <h2>Contact Details</h2>
-                    <p>How should Mills IP reach you? Your fixed fee quote will be sent to the email address below.</p>
+                    <p>How should Mills IP NZ reach you? Your fixed fee quote will be sent to the email address below.</p>
                 </div>
 
                 <form method="POST" action="{{ route('apply.step4.post') }}" novalidate>
@@ -159,7 +159,7 @@
                         </div>
                         <div class="tbadge-text">
                             <h4>Your quote goes to your email</h4>
-                            <p>Mills IP will send a fixed fee quote to the address you provide here.</p>
+                            <p>Mills IP NZ will send a fixed fee quote to the address you provide here.</p>
                         </div>
                     </div>
                 </div>

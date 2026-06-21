@@ -157,7 +157,7 @@
                                 <div class="help-num">4</div>
                                 <div class="help-text">
                                     <h4>Contact information</h4>
-                                    <p>Your name, email, and phone for the Mills IP team to reach you.</p>
+                                    <p>Your name, email, and phone for the Mills IP NZ team to reach you.</p>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +180,7 @@
                         </div>
                         <div class="tbadge-text">
                             <h4>Response in 1 business day</h4>
-                            <p>A Mills IP attorney will review and respond with a quote promptly.</p>
+                            <p>A Mills IP NZ attorney will review and respond with a quote promptly.</p>
                         </div>
                     </div>
                 </div>

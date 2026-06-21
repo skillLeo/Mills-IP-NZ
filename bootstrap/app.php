@@ -15,5 +15,10 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->redirectGuestsTo(fn (Request $request) => route('admin.login'));
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        // Suppress Windows tempnam() E_WARNING converted to ErrorException
+        $exceptions->renderable(function (\ErrorException $e) {
+            if (str_contains($e->getMessage(), 'tempnam()')) {
+                return null;
+            }
+        });
     })->create();

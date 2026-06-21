@@ -1,7 +1,7 @@
 @extends('layouts.public')
 
 @section('title', 'Trademark Application — Step 3 of 5')
-@section('meta_description', 'Provide legal owner details for your trademark application with Mills IP.')
+@section('meta_description', 'Provide legal owner details for your trademark application with Mills IP NZ.')
 
 @section('content')
 
@@ -88,7 +88,7 @@
 
                         <div class="field">
                             <div class="field-row">
-                                <label for="abn" class="field-label">ABN</label>
+                                <label for="abn" class="field-label">NZBN</label>
                                 <span class="field-opt">Required for companies</span>
                             </div>
                             <input
@@ -97,7 +97,7 @@
                                 name="abn"
                                 class="field-input @error('abn') err @enderror"
                                 value="{{ old('abn', session('application.step3.abn')) }}"
-                                placeholder="e.g. 51 824 753 556"
+                                placeholder="e.g. 9429000000000"
                                 maxlength="20"
                             >
                             @error('abn')
@@ -106,7 +106,7 @@
                                     {{ $message }}
                                 </p>
                             @enderror
-                            <p class="field-hint">Australian Business Number. Leave blank if registering as an individual.</p>
+                            <p class="field-hint">New Zealand Business Number. Leave blank if registering as an individual.</p>
                         </div>
 
                     </div>

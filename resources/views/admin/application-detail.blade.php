@@ -94,7 +94,7 @@
                             <span class="df-value">{{ ucfirst($application->legal_owner_type) }}</span>
                         </div>
                         <div class="detail-field">
-                            <span class="df-label">ABN</span>
+                            <span class="df-label">NZBN</span>
                             <span class="df-value">{{ $application->abn ?: '—' }}</span>
                         </div>
                     </div>

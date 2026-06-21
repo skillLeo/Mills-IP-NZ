@@ -1,6 +1,13 @@
 @php
 $steps = [1 => 'Trademark', 2 => 'Business', 3 => 'Legal Owner', 4 => 'Contact', 5 => 'Notes'];
 @endphp
+<div class="stepper-top">
+    <div class="stepper-eyebrow">
+        <span class="live-dot"></span>
+        New Zealand Trademark Application
+    </div>
+    <div class="stepper-progress-label">Step {{ $currentStep }} of {{ count($steps) }}</div>
+</div>
 <div class="stepper">
     @foreach($steps as $num => $label)
         @php $state = $num < $currentStep ? 'done' : ($num === $currentStep ? 'active' : ''); @endphp

@@ -155,7 +155,7 @@ class ApplicationFormController extends Controller
         ]);
 
         try {
-            Mail::to(config('services.mills_ip.notification_email'))
+            Mail::to(config('services.mills_ip_nz.notification_email'))
                 ->send(new InternalApplicationNotification($application));
 
             Mail::to($application->contact_email)
